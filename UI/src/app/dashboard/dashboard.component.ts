@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy, ViewChild, TemplateRef } from '@angular/core';
+import { Component, OnInit, NgModule, ChangeDetectionStrategy, ViewChild, TemplateRef } from '@angular/core';
 import { Router, Route } from '@angular/router';
 import { ActivatedRoute } from "@angular/router";
 import { startOfDay, endOfDay, subDays, addDays, endOfMonth, isSameDay, isSameMonth, addHours } from 'date-fns';
@@ -24,6 +24,16 @@ const colors: any = {
     secondary: '#FDF1BA'
   }
 };
+
+
+@NgModule({
+  // declarations: [HeaderComponent],
+  imports: [
+    // HeaderComponent
+  ]
+})
+
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',

@@ -5,19 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserModule } from './User/user.module';
 import { AppService } from './app.service';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
-
-
-import {RouterModule, Router} from '@angular/router';
-import {DashboardModule} from './dashboard/dashboard.module';
+// import {RouterModule, Router} from '@angular/router';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { SharedModuleComponent } from './shared-module/shared-module.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    SharedModuleComponent
   ],
   imports: [
     BrowserModule,
